@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <meta charset="UTF-8">
+    <meta name="description" content="المبرمج سمّاني إبراهيم الخليل">
+    <meta name="author" content="سمّاني إبراهيم الخليل">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>سمّاني إبراهيم الخليل</title>
+</head>
+
+<body>
+    <!-- القائمة الجانبية  -->
+    <div id="mySidenav" class="sidenav">
+        <!-- هنا عند الظغط يتم استدعاء الدالة closeNav()  -->
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"><span class="sback"><i class="fas fa-backward"></i></span></a>
+        <a href="#">آخر أعمالي</a>
+        <a href="#">أفضل أعمالي</a>
+        <a href="#">أشخاص أوصي بهم</a>
+        <a href="#">تواصل معي</a>
+    </div>
+    <main>
+        <section id="headerr">
+            <!-- style="flex-grow:8;" -->
+            <div class="dFixed" style="flex-grow:8;" id="branding">
+                <h1>
+                    <a href="index.html">
+                    الخليل <span class="heighlight">برمجة</span>
+                    <i class="fas fa-hat-cowboy-side "></i>
+                    
+                </a>
+                </h1>
+            </div>
+            <nav class="nFixed">
+                <ul>
+                    <a class="lLink hide" href="index.html">
+                        <li class="current lItem ">الصفحة الرئيسية</li>
+                    </a>
+                    <a class="lLink hide" href="#">
+                        <li class="lItem">معرض الاعمال</li>
+                    </a>
+                    <!-- هنا عندما يتم الظغط ينفد الحدث openNav() -->
+                    <li class="lItem"><span style="font-size:30px;cursor:pointer ; z-index: 0.9;" onclick="openNav()"><i class="fas fa-ellipsis-v"></i></span></li>
+
+                </ul>
+            </nav>
+
+
+        </section>
+        <section id="showCase">
+            <h1>
+                برمجة وتطوير<br> الخليل برمجة وتطوير
+            </h1>
+            <p>إبداعي في هذا المجال ينطلق من حبِّي له , وشغفي به , رؤيتي نحوه تتمثل في المزيد من التألق للمحتوى العربي بهذا الخصوص , أنا مُستمر فاليستمر حبُّكم لي ❤</p>
+        </section>
+        <section id="newsLetter">
+            <h1 style="flex-grow: 8">إشترك بالنشرة البريدية</h1>
+            <form action="">
+                <input type="email" style="flex-grow: 5" placeholder="ضع البريد الإلكتروني الخاص بك">
+                <button type="submit" style="flex-grow: 5">إشتراك</button>
+            </form>
+        </section>
+        <section id="boxes">
+            <div class="box">
+                <i class="fas fa-shield-alt fa-2x"></i>
+                <h3>&nbsp; &nbsp; تصاميم إحترافية </h3>
+                <p>محتوى نصي تجريبي لا يحتوي معلومات مفيدة وإنما يدرج لملء الفراغات والتحقق من صحة التنسيق للصفحة. يمكنك استبدال هذا النص بأي نص آخر له ارتباط مفيد بالتطبيق الذي تعمل عليه، ليصبح الموقع أكثر واقعية. أو يمكنك نسخ هذا النص واستخدامه كما هو</p>
+            </div>
+            <div class="box">
+                <i class="fas fa-sync fa-2x"></i>
+                <h3>&nbsp; &nbsp; أحدث الأساليب والتقنيات &nbsp; &nbsp; </h3>
+                <p>محتوى نصي تجريبي لا يحتوي معلومات مفيدة وإنما يدرج لملء الفراغات والتحقق من صحة التنسيق للصفحة. يمكنك استبدال هذا النص بأي نص آخر له ارتباط مفيد بالتطبيق الذي تعمل عليه، ليصبح الموقع أكثر واقعية. أو يمكنك نسخ هذا النص واستخدامه كما هو</p>
+
+            </div>
+            <div class="box">
+                <i class="fas fa-stopwatch fa-2x"></i>
+                <h3>&nbsp; &nbsp;تسليم ضمن الوقت المطلوب </h3>
+                <p>محتوى نصي تجريبي لا يحتوي معلومات مفيدة وإنما يدرج لملء الفراغات والتحقق من صحة التنسيق للصفحة. يمكنك استبدال هذا النص بأي نص آخر له ارتباط مفيد بالتطبيق الذي تعمل عليه، ليصبح الموقع أكثر واقعية. أو يمكنك نسخ هذا النص واستخدامه كما هو</p>
+
+            </div>
+        </section>
+        <section id="footer">
+            <section id="footer">
+                <i id="toUp" style="float: right;cursor: pointer;" class="far fa-arrow-alt-circle-up fa-2x"></i>
+                <p> الصفحة الشخصية سماني إبراهيم الخليل &copy; <span id="currentYear"></p>
+            </section>
+        </section>
+    </main>
+<script src="./js/script.js"></script>
+
+</body>
+
+</html>

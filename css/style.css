@@ -1,0 +1,291 @@
+@import url('https://fonts.googleapis.com/css2?family=El+Messiri:wght@500&display=swap');
+#headerr {
+    /* font-size: 25px; */
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    display: flex;
+    flex-flow: row wrap;
+    border-bottom: 3px solid rgb(218, 169, 10);
+    background-color: rgb(255, 255, 255);
+    padding: 25px 45px;
+    /* height: 5%; */
+}
+
+#header {
+    /* font-size: 15px; */
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    background-color: rgba(255, 255, 255);
+    padding: 25px 5px;
+    height: 1%;
+    flex-wrap: wrap;
+    position: fixed;
+}
+
+.Fixedn {
+    position: absolute;
+    right: 15px;
+}
+
+.Fixedd {
+    position: absolute;
+    left: 30px;
+}
+
+.lItem,
+.lLink,
+.sback {
+    margin: 5px 0px 0px 5px;
+    color: rgb(103, 36, 228);
+    padding: 0px 5px 10px 5px;
+    list-style-type: none;
+    float: right;
+    text-decoration: none;
+}
+
+
+/* رأس الصفحة عندما يكون شريط التنقل في الاعلى */
+
+#branding h1 {
+    font-size: 28px;
+    margin: 10px 0px 0px 0px;
+    /* flex-grow: 8; */
+}
+
+
+/* رأس الصفحة عندما يكون شريط التنقل في الاسفل */
+
+
+/* #brandingg h1 {
+    font-size: 28px;
+} */
+
+main {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+main>section {
+    width: 100%;
+    margin: auto;
+    overflow: hidden;
+}
+
+body {
+    font-family: 'El Messiri', sans-serif;
+    padding: 0;
+    margin: 0;
+    background-color: #f4f4f4;
+    direction: rtl;
+}
+
+.heighlight,
+.current {
+    color: rgb(160, 27, 201);
+}
+
+a {
+    text-decoration: none;
+}
+
+.lItemm,
+.lLinkk,
+.sbackk {
+    margin: 5px 0px 0px 5px;
+    color: rgb(103, 36, 228);
+    padding: 5px;
+    list-style-type: none;
+    float: right;
+    text-decoration: none;
+}
+
+
+/* العرض المختصر و النص */
+
+#showCase {
+    min-height: 400px;
+    background: url(../img/image.jpg) no-repeat center;
+    background-size: cover;
+    width: 100%;
+    height: 400PX;
+    color: whitesmoke;
+    text-align: center;
+}
+
+#showCase h1 {
+    font-size: 55px;
+    margin-top: 120px;
+    margin-bottom: 10px;
+    text-shadow: 5px 5px 5px black;
+}
+
+#showCase p {
+    text-shadow: 5px 5px 5px black;
+    font-size: 22px;
+}
+
+
+/* النشرة البريدية */
+
+#newsLetter {
+    background-color: white;
+    color: rgb(103, 36, 228);
+    padding: 15px 120px;
+    display: flex;
+    flex-flow: row wrap;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    margin-top: 15px;
+}
+
+#newsLetter h1 {
+    float: right;
+}
+
+#newsLetter form {
+    float: left;
+    display: flex;
+    flex-flow: row wrap;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+}
+
+#newsLetter input[type='email'] {
+    width: 250px;
+    height: 25px;
+    padding: 4px;
+    font-size: 20px;
+}
+
+
+/* لاخفاء التركيز عن منطقة ادخال البريد الالكتروني */
+
+#newsLetter>textarea:focus,
+input:focus {
+    outline: none;
+}
+
+button {
+    cursor: pointer;
+    height: 38px;
+    padding: 0px 20px;
+    color: #ffffff;
+    background-color: rgb(103, 36, 228);
+    font-family: 'El Messiri', sans-serif;
+    font-size: large;
+    border: none;
+    border-radius: 2px;
+    margin-right: 10px;
+}
+
+.box {
+    margin-top: 20px;
+    padding: 60px 120px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    border-bottom: 3px solid rgb(218, 169, 10);
+}
+
+#boxes .box {
+    text-align: center;
+    margin-left: 10px;
+}
+
+@media (max-width: 1020px) {
+    #boxes {
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 530px) {
+    #showCase {
+        min-height: 600px;
+    }
+    .box {
+        padding: 30px;
+    }
+    .hide {
+        display: none;
+    }
+}
+
+#footer {
+    padding: 20px;
+    /* margin-top: 20px; */
+    color: #ffffff;
+    background-color: #32a0c2;
+    text-align: center;
+}
+
+
+/********القائمة الجانبية********/
+
+
+/* مواصفات نعطيها للقائمة الجانبية في الحالة العادية (الساكنة) */
+
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    background-color: rgb(255, 255, 255);
+    z-index: 1;
+    top: 0;
+    left: 0;
+    overflow-x: hidden;
+    transition: 1s;
+    padding-top: 60px;
+}
+
+
+/* الروابط في القائمة الجانبية */
+
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+}
+
+
+/* اثناء تمرير الماوس */
+
+.sidenav a:hover {
+    color: rgb(160, 27, 201);
+    background-color: rgba(239, 208, 248, 0.4);
+    border-radius: 10px;
+    transition: 1s;
+}
+
+
+/* خصائص زر اخفاء القائمة الجانبية */
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 25px;
+    margin-left: 50px;
+}
+
+
+/* خصائص التوافقية */
+
+@media screen and (max-height: 500px) {
+    .sidenav {
+        padding-top: 15px;
+    }
+    .sidenav a {
+        font-size: 18px;
+    }
+}
