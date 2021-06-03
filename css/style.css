@@ -218,6 +218,12 @@ button {
     }
 }
 
+@media (max-width: 730px) {
+    #showCase {
+        min-height: 600px;
+    }
+}
+
 #footer {
     padding: 20px;
     /* margin-top: 20px; */
