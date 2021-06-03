@@ -31,12 +31,12 @@
 
 $(function checkPosition() {
   if (window.matchMedia('(max-width: 530px)').matches) {
-      alert('here');
+    
     $('#mySidenav').prepend(' <a class="lLink hide" href="index.html"><li class="current lItem ">الصفحة الرئيسية</li></a>')
       $('#mySidenav').prepend(' <a class="lLink hide" href="index.html"><li class="current lItem ">معرض الأعمال</li></a>')
       
   } else {
-    alert('back')
+  
     $('#mySidenav').remove('.lItem')
   }
 
